@@ -1,19 +1,15 @@
 package br.com.atividade1.iphone;
 
-import java.util.Scanner;
-
 public class IphoneFactoryTeste {
 
     public static void main(String[] args) throws IllegalAccessException {
-        Iphone iphone1 = IphoneFactory.cadastrarIphone(TypeIphoneEnum.IPHONE_9);
-        Iphone iphone2 = IphoneFactory.cadastrarIphone(TypeIphoneEnum.IPHONE_X);
-        Iphone iphone3 = IphoneFactory.cadastrarIphone(TypeIphoneEnum.IPHONE_13_MINI);
+        IphoneInterface iphoneInterface1 = IphoneFactory.cadastrarIphone(TypeIphoneEnum.IPHONE_9);
+        IphoneInterface iphoneInterface2 = IphoneFactory.cadastrarIphone(TypeIphoneEnum.IPHONE_X);
+        IphoneInterface iphoneInterface3 = IphoneFactory.cadastrarIphone(TypeIphoneEnum.IPHONE_13_MINI);
 
-        System.out.println(iphone1.toString());
-        System.out.println(iphone2.toString());
-        System.out.println(iphone3.toString());
-
-        
+        System.out.println(iphoneInterface1.exibirDetalhes());
+        System.out.println(iphoneInterface2.exibirDetalhes());
+        System.out.println(iphoneInterface3.exibirDetalhes());
     }
 
 //    @Override

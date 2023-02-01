@@ -1,7 +1,7 @@
 package br.com.atividade1.iphone;
 
 public class IphoneFactory{
-    public static Iphone cadastrarIphone(TypeIphoneEnum tipo) throws IllegalAccessException {
+    public static IphoneInterface cadastrarIphone(TypeIphoneEnum tipo) throws IllegalAccessException {
         if (tipo.equals(TypeIphoneEnum.IPHONE_9))
             return new Iphone9("11.0", "4.7", 3, 32, "12", 3200);
 
